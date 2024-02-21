@@ -4,25 +4,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background-color: #222;
 }
 
 .Calculator {
-    padding: 20px;
+    padding: 2%;
     border-radius: 10px;
     background-color: rgb(229, 227, 227);
-    width: 100%;
-    max-width: 400px;
+    max-width: 400px; /* Limitez la largeur pour éviter un élargissement excessif sur les grands écrans */
 }
 
 form input {
     border: none;
     outline: 0;
-    width: 90px;
-    height: 90px;
-    font-size: 16px;
+    width: 18%; /* Utilisez des pourcentages pour définir la largeur des boutons */
+    height: 60px; /* Ajustez la hauteur des boutons */
+    font-size: 1.2em; /* Utilisez EM ou REM pour la taille de la police */
     background-color: rgb(0, 0, 124);
-    margin: 2px;
+    margin: 1%;
     border-radius: 10px;
     color: white;
     font-weight: bolder;
@@ -36,38 +35,27 @@ form input[type="button"]:hover {
 form .display {
     display: flex;
     justify-content: flex-end;
-    margin: 5px 0px 15px 0px;
+    margin: 2% 0;
 }
 
 form .display input {
     text-align: right;
-    font-size: 40px;
+    font-size: 2em; /* Ajustez la taille de la police */
     flex: 1;
-    padding: 5px 10px;
+    padding: 5px 2%;
     background-color: black;
 }
 
-/* Media queries */
-@media screen and (max-width: 768px) {
+/* Media Queries pour les ajustements en fonction de la taille de l'écran */
+@media screen and (max-width: 600px) {
+    .Calculator {
+        padding: 5%;
+    }
     form input {
-        width: 100px;
-        height: 100px;
-        font-size: 14px;
+        width: 40%;
+        font-size: 1em;
     }
-
     form .display input {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 200px) {
-    form input {
-        width: 80px;
-        height: 80px;
-        font-size: 12px;
-    }
-
-    form .display input {
-        font-size: 20px;
+        font-size: 1.5em;
     }
 }
