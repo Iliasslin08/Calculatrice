@@ -23,12 +23,15 @@ function handel(w){
             <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="7" />
             <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="8" />
             <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="9" />
+            <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="1" />
             <input type='button' value="*" onClick={(W)=>setValue(value+W.target.value)} />
           </div>
           <div>
             <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="4" />
             <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="5" />
             <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="6" />
+            <input onClick={(W)=>setValue(value+W.target.value)} type='button' value="2" />
+
             <input type='button' value="+" onClick={(W)=>setValue(value+W.target.value)} />
           </div>
           <div>
